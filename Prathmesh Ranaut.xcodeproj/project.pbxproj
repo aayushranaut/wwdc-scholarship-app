@@ -10,6 +10,7 @@
 		D51181CD1AEB6AE80007B805 /* seocheckout.png in Resources */ = {isa = PBXBuildFile; fileRef = D51181CB1AEB6AE80007B805 /* seocheckout.png */; };
 		D51181CE1AEB6AE80007B805 /* hypeninja.png in Resources */ = {isa = PBXBuildFile; fileRef = D51181CC1AEB6AE80007B805 /* hypeninja.png */; };
 		D51181D01AEB72D80007B805 /* flying_ducks.png in Resources */ = {isa = PBXBuildFile; fileRef = D51181CF1AEB72D80007B805 /* flying_ducks.png */; };
+		D511820A1AEBC4290007B805 /* pwc-building.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D51182091AEBC4290007B805 /* pwc-building.jpg */; };
 		D5404CDE1AE52D35007C5D4C /* PRCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5404CDD1AE52D35007C5D4C /* PRCellView.swift */; };
 		D560968A1AE553DA009B00E5 /* project_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D56096891AE553DA009B00E5 /* project_icon.png */; };
 		D562AFDE1AE516B600985989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562AFDD1AE516B600985989 /* AppDelegate.swift */; };
@@ -52,6 +53,7 @@
 		D51181CB1AEB6AE80007B805 /* seocheckout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seocheckout.png; sourceTree = "<group>"; };
 		D51181CC1AEB6AE80007B805 /* hypeninja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hypeninja.png; sourceTree = "<group>"; };
 		D51181CF1AEB72D80007B805 /* flying_ducks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flying_ducks.png; sourceTree = "<group>"; };
+		D51182091AEBC4290007B805 /* pwc-building.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pwc-building.jpg"; sourceTree = "<group>"; };
 		D5404CDD1AE52D35007C5D4C /* PRCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRCellView.swift; sourceTree = "<group>"; };
 		D56096891AE553DA009B00E5 /* project_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = project_icon.png; sourceTree = "<group>"; };
 		D562AFD81AE516B600985989 /* Prathmesh Ranaut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prathmesh Ranaut.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 				D5912F321AEAB93700863C69 /* apeejay.png */,
 				D5955C221AE92E0900BC2FC4 /* 547561.png */,
 				D51181CF1AEB72D80007B805 /* flying_ducks.png */,
+				D51182091AEBC4290007B805 /* pwc-building.jpg */,
 				D56096891AE553DA009B00E5 /* project_icon.png */,
 				D51181CB1AEB6AE80007B805 /* seocheckout.png */,
 				D51181CC1AEB6AE80007B805 /* hypeninja.png */,
@@ -273,6 +276,7 @@
 				D562AFE31AE516B600985989 /* Main.storyboard in Resources */,
 				D562B0001AE5203700985989 /* prathmesh_ranaut.jpg in Resources */,
 				D57AEE191AEB652A0027A6FD /* Entitlements.plist in Resources */,
+				D511820A1AEBC4290007B805 /* pwc-building.jpg in Resources */,
 				D562AFE81AE516B600985989 /* LaunchScreen.xib in Resources */,
 				D5912F2F1AEAB43800863C69 /* project_icon2.png in Resources */,
 				D5912F331AEAB93700863C69 /* apeejay.png in Resources */,
@@ -446,6 +450,7 @@
 				INFOPLIST_FILE = "Prathmesh Ranaut/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,6 +464,7 @@
 				INFOPLIST_FILE = "Prathmesh Ranaut/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

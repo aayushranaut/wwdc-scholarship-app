@@ -33,10 +33,15 @@ class PageContentViewController: UIViewController {
         self.appDescription.text = appDescriptionString!
         self.appYear.text = appYearString!
         
-        self.appIcon.layer.cornerRadius = 14.0
+        self.appIcon.layer.cornerRadius = 24.0
         self.appIcon.clipsToBounds = true
     }
-    
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(1.0, animations: {
+            self.appIcon.alpha = 1.0
+        })
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

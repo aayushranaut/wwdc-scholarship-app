@@ -88,6 +88,24 @@ class PRProjectsViewController: ViewController, UIPageViewControllerDataSource, 
         pageContentViewController.appYearString = self.appYears[index]
         pageContentViewController.appDescriptionString = self.appDescription[index]
         
+        var leftRightMin: CGFloat = -15.0
+        var leftRightMax: CGFloat = 15.0
+        var leftRight: UIInterpolatingMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x", type: UIInterpolatingMotionEffectType.TiltAlongHorizontalAxis)
+        
+        var topBottom: UIInterpolatingMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y", type: UIInterpolatingMotionEffectType.TiltAlongVerticalAxis)
+        
+        leftRight.minimumRelativeValue = leftRightMin
+        leftRight.maximumRelativeValue = leftRightMax
+        
+        topBottom.minimumRelativeValue = leftRightMin
+        topBottom.maximumRelativeValue = leftRightMax
+        
+        var meGroup: UIMotionEffectGroup = UIMotionEffectGroup()
+        meGroup.motionEffects = [leftRight, topBottom]
+        
+        pageContentViewController.view.addMotionEffect(meGroup)
+        
+        
         return pageContentViewController
     }
     
@@ -102,12 +120,8 @@ class PRProjectsViewController: ViewController, UIPageViewControllerDataSource, 
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-//        UIGraphicsBeginImageContext(self.view.frame.size)
-//        UIImage(named: "547561.png").drawInRect(self.view.bounds)
-//        var image :UIImage = UIGraphicsGetImageFromCurrentImageContext();
-//        UIGraphicsEndImageContext();
-//        
-//        self.view.backgroundColor = UIColor(patternImage: image)
+        
+        
         
         reset()
     }
@@ -116,6 +130,7 @@ class PRProjectsViewController: ViewController, UIPageViewControllerDataSource, 
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         
         UIGraphicsBeginImageContext(self.view.frame.size)
+        
         UIImage(named: "547561.png")!.drawInRect(self.view.bounds)
         var image :UIImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();

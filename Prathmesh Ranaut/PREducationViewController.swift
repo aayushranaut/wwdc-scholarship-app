@@ -104,13 +104,12 @@ class PREducationViewController: ViewController, UIPageViewControllerDataSource,
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         
         UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "547561.png")!.drawInRect(self.view.bounds)
+        UIImage(named: "pwc-building.jpg")!.drawInRect(self.view.bounds)
         var image :UIImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
         self.view.backgroundColor = UIColor(patternImage: image)
     }
-    
 
     /*
     // MARK: - Navigation

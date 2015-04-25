@@ -12,6 +12,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet var profileImageView: UIImageView!
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var previewView: UIView!
     
     let transitionManager: TransitionManager = TransitionManager()
     
@@ -48,6 +49,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 completion: nil)
         }
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -96,10 +101,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 break;
         }
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "PRProjectsViewController" {
