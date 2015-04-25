@@ -7,12 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D51181CD1AEB6AE80007B805 /* seocheckout.png in Resources */ = {isa = PBXBuildFile; fileRef = D51181CB1AEB6AE80007B805 /* seocheckout.png */; };
+		D51181CE1AEB6AE80007B805 /* hypeninja.png in Resources */ = {isa = PBXBuildFile; fileRef = D51181CC1AEB6AE80007B805 /* hypeninja.png */; };
+		D51181D01AEB72D80007B805 /* flying_ducks.png in Resources */ = {isa = PBXBuildFile; fileRef = D51181CF1AEB72D80007B805 /* flying_ducks.png */; };
+		D5404CDE1AE52D35007C5D4C /* PRCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5404CDD1AE52D35007C5D4C /* PRCellView.swift */; };
+		D560968A1AE553DA009B00E5 /* project_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D56096891AE553DA009B00E5 /* project_icon.png */; };
 		D562AFDE1AE516B600985989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562AFDD1AE516B600985989 /* AppDelegate.swift */; };
 		D562AFE01AE516B600985989 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562AFDF1AE516B600985989 /* ViewController.swift */; };
 		D562AFE31AE516B600985989 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D562AFE11AE516B600985989 /* Main.storyboard */; };
 		D562AFE51AE516B600985989 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D562AFE41AE516B600985989 /* Images.xcassets */; };
 		D562AFE81AE516B600985989 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D562AFE61AE516B600985989 /* LaunchScreen.xib */; };
 		D562AFF41AE516B600985989 /* Prathmesh_RanautTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D562AFF31AE516B600985989 /* Prathmesh_RanautTests.swift */; };
+		D562B0001AE5203700985989 /* prathmesh_ranaut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D562AFFF1AE5203700985989 /* prathmesh_ranaut.jpg */; };
+		D57AEE191AEB652A0027A6FD /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = D57AEE181AEB652A0027A6FD /* Entitlements.plist */; };
+		D5912F2B1AEA0F6300863C69 /* PREducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5912F2A1AEA0F6300863C69 /* PREducationViewController.swift */; };
+		D5912F2D1AEA16A800863C69 /* PREducationPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5912F2C1AEA16A800863C69 /* PREducationPageContentViewController.swift */; };
+		D5912F2F1AEAB43800863C69 /* project_icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = D5912F2E1AEAB43800863C69 /* project_icon2.png */; };
+		D5912F311AEAB93100863C69 /* ambience.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5912F301AEAB93100863C69 /* ambience.jpg */; };
+		D5912F331AEAB93700863C69 /* apeejay.png in Resources */ = {isa = PBXBuildFile; fileRef = D5912F321AEAB93700863C69 /* apeejay.png */; };
+		D5912F351AEAB9A600863C69 /* ipu.png in Resources */ = {isa = PBXBuildFile; fileRef = D5912F341AEAB9A600863C69 /* ipu.png */; };
+		D5912F391AEAC49700863C69 /* project3.png in Resources */ = {isa = PBXBuildFile; fileRef = D5912F381AEAC49700863C69 /* project3.png */; };
+		D5955C231AE92E0900BC2FC4 /* 547561.png in Resources */ = {isa = PBXBuildFile; fileRef = D5955C221AE92E0900BC2FC4 /* 547561.png */; };
+		D5ACB3901AE67DB80062D1C0 /* PRCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ACB38F1AE67DB80062D1C0 /* PRCollectionViewCell.swift */; };
+		D5ACB3C21AE7F1EC0062D1C0 /* PRProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ACB3C11AE7F1EC0062D1C0 /* PRProjectsViewController.swift */; };
+		D5ACB3C41AE80D1F0062D1C0 /* PRInterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ACB3C31AE80D1F0062D1C0 /* PRInterestsViewController.swift */; };
+		D5ACB3C61AE80E3F0062D1C0 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ACB3C51AE80E3F0062D1C0 /* TransitionManager.swift */; };
+		D5ACB3C81AE813020062D1C0 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ACB3C71AE813020062D1C0 /* NavigationControllerDelegate.swift */; };
+		D5ACB3CA1AE813940062D1C0 /* CircleTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ACB3C91AE813940062D1C0 /* CircleTransitionAnimator.swift */; };
+		D5ACB3CC1AE81DE60062D1C0 /* PRProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ACB3CB1AE81DE60062D1C0 /* PRProjectView.swift */; };
+		D5ACB3CE1AE830FB0062D1C0 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ACB3CD1AE830FB0062D1C0 /* PageContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D51181CB1AEB6AE80007B805 /* seocheckout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seocheckout.png; sourceTree = "<group>"; };
+		D51181CC1AEB6AE80007B805 /* hypeninja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hypeninja.png; sourceTree = "<group>"; };
+		D51181CF1AEB72D80007B805 /* flying_ducks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flying_ducks.png; sourceTree = "<group>"; };
+		D5404CDD1AE52D35007C5D4C /* PRCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRCellView.swift; sourceTree = "<group>"; };
+		D56096891AE553DA009B00E5 /* project_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = project_icon.png; sourceTree = "<group>"; };
 		D562AFD81AE516B600985989 /* Prathmesh Ranaut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prathmesh Ranaut.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D562AFDC1AE516B600985989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D562AFDD1AE516B600985989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +64,24 @@
 		D562AFED1AE516B600985989 /* Prathmesh RanautTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prathmesh RanautTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D562AFF21AE516B600985989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D562AFF31AE516B600985989 /* Prathmesh_RanautTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prathmesh_RanautTests.swift; sourceTree = "<group>"; };
+		D562AFFF1AE5203700985989 /* prathmesh_ranaut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prathmesh_ranaut.jpg; sourceTree = "<group>"; };
+		D57AEE181AEB652A0027A6FD /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		D5912F2A1AEA0F6300863C69 /* PREducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PREducationViewController.swift; sourceTree = "<group>"; };
+		D5912F2C1AEA16A800863C69 /* PREducationPageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PREducationPageContentViewController.swift; sourceTree = "<group>"; };
+		D5912F2E1AEAB43800863C69 /* project_icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = project_icon2.png; sourceTree = "<group>"; };
+		D5912F301AEAB93100863C69 /* ambience.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ambience.jpg; sourceTree = "<group>"; };
+		D5912F321AEAB93700863C69 /* apeejay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apeejay.png; sourceTree = "<group>"; };
+		D5912F341AEAB9A600863C69 /* ipu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipu.png; sourceTree = "<group>"; };
+		D5912F381AEAC49700863C69 /* project3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = project3.png; sourceTree = "<group>"; };
+		D5955C221AE92E0900BC2FC4 /* 547561.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 547561.png; sourceTree = "<group>"; };
+		D5ACB38F1AE67DB80062D1C0 /* PRCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRCollectionViewCell.swift; sourceTree = "<group>"; };
+		D5ACB3C11AE7F1EC0062D1C0 /* PRProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRProjectsViewController.swift; sourceTree = "<group>"; };
+		D5ACB3C31AE80D1F0062D1C0 /* PRInterestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRInterestsViewController.swift; sourceTree = "<group>"; };
+		D5ACB3C51AE80E3F0062D1C0 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		D5ACB3C71AE813020062D1C0 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		D5ACB3C91AE813940062D1C0 /* CircleTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTransitionAnimator.swift; sourceTree = "<group>"; };
+		D5ACB3CB1AE81DE60062D1C0 /* PRProjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRProjectView.swift; sourceTree = "<group>"; };
+		D5ACB3CD1AE830FB0062D1C0 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +102,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D560968B1AE553E0009B00E5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D5912F2E1AEAB43800863C69 /* project_icon2.png */,
+				D5912F301AEAB93100863C69 /* ambience.jpg */,
+				D5912F341AEAB9A600863C69 /* ipu.png */,
+				D5912F321AEAB93700863C69 /* apeejay.png */,
+				D5955C221AE92E0900BC2FC4 /* 547561.png */,
+				D51181CF1AEB72D80007B805 /* flying_ducks.png */,
+				D56096891AE553DA009B00E5 /* project_icon.png */,
+				D51181CB1AEB6AE80007B805 /* seocheckout.png */,
+				D51181CC1AEB6AE80007B805 /* hypeninja.png */,
+				D562AFFF1AE5203700985989 /* prathmesh_ranaut.jpg */,
+				D5912F381AEAC49700863C69 /* project3.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		D562AFCF1AE516B600985989 = {
 			isa = PBXGroup;
 			children = (
+				D57AEE181AEB652A0027A6FD /* Entitlements.plist */,
 				D562AFDA1AE516B600985989 /* Prathmesh Ranaut */,
 				D562AFF01AE516B600985989 /* Prathmesh RanautTests */,
 				D562AFD91AE516B600985989 /* Products */,
@@ -79,9 +144,21 @@
 			children = (
 				D562AFDD1AE516B600985989 /* AppDelegate.swift */,
 				D562AFDF1AE516B600985989 /* ViewController.swift */,
+				D5ACB3C71AE813020062D1C0 /* NavigationControllerDelegate.swift */,
+				D5404CDD1AE52D35007C5D4C /* PRCellView.swift */,
 				D562AFE11AE516B600985989 /* Main.storyboard */,
-				D562AFE41AE516B600985989 /* Images.xcassets */,
+				D5ACB3C11AE7F1EC0062D1C0 /* PRProjectsViewController.swift */,
+				D5ACB3CD1AE830FB0062D1C0 /* PageContentViewController.swift */,
+				D5912F2C1AEA16A800863C69 /* PREducationPageContentViewController.swift */,
+				D5ACB3C31AE80D1F0062D1C0 /* PRInterestsViewController.swift */,
+				D5912F2A1AEA0F6300863C69 /* PREducationViewController.swift */,
+				D5ACB38F1AE67DB80062D1C0 /* PRCollectionViewCell.swift */,
+				D5ACB3C51AE80E3F0062D1C0 /* TransitionManager.swift */,
+				D5ACB3C91AE813940062D1C0 /* CircleTransitionAnimator.swift */,
+				D5ACB3CB1AE81DE60062D1C0 /* PRProjectView.swift */,
 				D562AFE61AE516B600985989 /* LaunchScreen.xib */,
+				D562AFE41AE516B600985989 /* Images.xcassets */,
+				D560968B1AE553E0009B00E5 /* Assets */,
 				D562AFDB1AE516B600985989 /* Supporting Files */,
 			);
 			path = "Prathmesh Ranaut";
@@ -192,9 +269,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5912F351AEAB9A600863C69 /* ipu.png in Resources */,
 				D562AFE31AE516B600985989 /* Main.storyboard in Resources */,
+				D562B0001AE5203700985989 /* prathmesh_ranaut.jpg in Resources */,
+				D57AEE191AEB652A0027A6FD /* Entitlements.plist in Resources */,
 				D562AFE81AE516B600985989 /* LaunchScreen.xib in Resources */,
+				D5912F2F1AEAB43800863C69 /* project_icon2.png in Resources */,
+				D5912F331AEAB93700863C69 /* apeejay.png in Resources */,
+				D51181CD1AEB6AE80007B805 /* seocheckout.png in Resources */,
+				D560968A1AE553DA009B00E5 /* project_icon.png in Resources */,
 				D562AFE51AE516B600985989 /* Images.xcassets in Resources */,
+				D51181CE1AEB6AE80007B805 /* hypeninja.png in Resources */,
+				D5955C231AE92E0900BC2FC4 /* 547561.png in Resources */,
+				D5912F311AEAB93100863C69 /* ambience.jpg in Resources */,
+				D5912F391AEAC49700863C69 /* project3.png in Resources */,
+				D51181D01AEB72D80007B805 /* flying_ducks.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +301,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5ACB3CC1AE81DE60062D1C0 /* PRProjectView.swift in Sources */,
+				D5ACB3C41AE80D1F0062D1C0 /* PRInterestsViewController.swift in Sources */,
 				D562AFE01AE516B600985989 /* ViewController.swift in Sources */,
+				D5912F2B1AEA0F6300863C69 /* PREducationViewController.swift in Sources */,
+				D5ACB3C61AE80E3F0062D1C0 /* TransitionManager.swift in Sources */,
 				D562AFDE1AE516B600985989 /* AppDelegate.swift in Sources */,
+				D5ACB3CE1AE830FB0062D1C0 /* PageContentViewController.swift in Sources */,
+				D5912F2D1AEA16A800863C69 /* PREducationPageContentViewController.swift in Sources */,
+				D5ACB3C81AE813020062D1C0 /* NavigationControllerDelegate.swift in Sources */,
+				D5ACB3CA1AE813940062D1C0 /* CircleTransitionAnimator.swift in Sources */,
+				D5ACB3901AE67DB80062D1C0 /* PRCollectionViewCell.swift in Sources */,
+				D5404CDE1AE52D35007C5D4C /* PRCellView.swift in Sources */,
+				D5ACB3C21AE7F1EC0062D1C0 /* PRProjectsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +372,9 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -314,7 +416,9 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -336,6 +440,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				INFOPLIST_FILE = "Prathmesh Ranaut/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +453,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
 				INFOPLIST_FILE = "Prathmesh Ranaut/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +515,7 @@
 				D562AFF91AE516B600985989 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D562AFFA1AE516B600985989 /* Build configuration list for PBXNativeTarget "Prathmesh RanautTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +524,7 @@
 				D562AFFC1AE516B600985989 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

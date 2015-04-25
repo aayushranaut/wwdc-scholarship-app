@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Z9g-2W-qJb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Prathmesh_Ranaut" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,355 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prathmesh_ranaut.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qpb-Hv-IoE">
+                                <rect key="frame" x="271" y="160" width="59" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="1vY-i6-prL"/>
+                                    <constraint firstAttribute="height" constant="59" id="ItY-g3-WMj"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1Rg-7q-fqI">
+                                <rect key="frame" x="175" y="250" width="250" height="300"/>
+                                <color key="backgroundColor" red="0.74509803921568629" green="0.96470588235294119" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="GVz-T4-tqK"/>
+                                    <constraint firstAttribute="height" constant="300" id="Kr0-bV-gzc"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="07E-go-kdH">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PRCell" id="2Zi-gV-9dZ" customClass="PRCollectionViewCell" customModule="Prathmesh_Ranaut" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoM-xi-G2a">
+                                                    <rect key="frame" x="13" y="81" width="74" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view alpha="0.10000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ogj-Z0-M1o" customClass="PRCellView" customModule="Prathmesh_Ranaut" customModuleProvider="target">
+                                                    <rect key="frame" x="33" y="32" width="35" height="35"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="project_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="UMK-6b-3kx">
+                                                            <rect key="frame" x="6" y="8" width="21" height="19"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.74460298178706985" green="0.96277093728894902" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                            <color key="value" red="1" green="0.72246825687665917" blue="0.12597259174352982" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                            <color key="value" red="1" green="0.41493624512516847" blue="0.121587220484076" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="cellView" destination="ogj-Z0-M1o" id="Mln-VS-lxT"/>
+                                            <outlet property="imageApp" destination="UMK-6b-3kx" id="9BZ-Wf-085"/>
+                                            <outlet property="labelApp" destination="UoM-xi-G2a" id="zXL-An-8lF"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="vQv-1a-xnv"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="8Af-r6-WWa"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prathmesh Ranaut" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSI-pz-Rq3">
+                                <rect key="frame" x="196" y="250" width="209" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="209" id="pYT-lx-bac"/>
+                                    <constraint firstAttribute="height" constant="42" id="uwn-Im-Lhc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.40770537013376007" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.97999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qpb-Hv-IoE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="140" id="1uG-CE-omh"/>
+                            <constraint firstAttribute="centerX" secondItem="xSI-pz-Rq3" secondAttribute="centerX" id="DUO-es-pC3"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1Rg-7q-fqI" secondAttribute="bottom" constant="50" id="O9A-38-C3i"/>
+                            <constraint firstAttribute="centerX" secondItem="1Rg-7q-fqI" secondAttribute="centerX" id="X7b-ru-zdu"/>
+                            <constraint firstItem="xSI-pz-Rq3" firstAttribute="top" secondItem="qpb-Hv-IoE" secondAttribute="bottom" constant="31" id="dab-kP-deI"/>
+                            <constraint firstAttribute="centerX" secondItem="qpb-Hv-IoE" secondAttribute="centerX" id="zOB-DK-ahr"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="afm-lS-4eN"/>
+                    <connections>
+                        <outlet property="collectionView" destination="1Rg-7q-fqI" id="zg7-Yo-WKg"/>
+                        <outlet property="nameLabel" destination="xSI-pz-Rq3" id="vDf-G6-QPp"/>
+                        <outlet property="profileImageView" destination="qpb-Hv-IoE" id="bPi-uq-c9T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1090" y="354"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="4cy-nj-nZB">
+            <objects>
+                <pageViewController storyboardIdentifier="PREducationPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="hnH-0v-wHI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L7g-c9-4xm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="-2488"/>
+        </scene>
+        <!--Education Page Content View Controller-->
+        <scene sceneID="Zxl-dT-TNk">
+            <objects>
+                <viewController storyboardIdentifier="PREducationPageContentViewController" id="bxO-pj-tUO" customClass="PREducationPageContentViewController" customModule="Prathmesh_Ranaut" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hg1-4M-w4W"/>
+                        <viewControllerLayoutGuide type="bottom" id="5qp-AS-fOe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Bg-gb-GMj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DSV-Sm-DOj" customClass="PRProjectView" customModule="Prathmesh_Ranaut" customModuleProvider="target">
+                                <rect key="frame" x="16" y="80" width="568" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prathmesh_ranaut.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1Ng-QV-dY6">
+                                        <rect key="frame" x="209" y="39" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="MxB-xa-NuL"/>
+                                            <constraint firstAttribute="width" constant="150" id="ZnJ-Fj-oud"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw9-he-TRu">
+                                        <rect key="frame" x="159" y="197" width="250" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="4Mj-I8-OP2"/>
+                                            <constraint firstAttribute="width" constant="250" id="96O-Nx-GRe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3V-sV-fuC">
+                                        <rect key="frame" x="159" y="217" width="250" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="GEO-7W-Jmk"/>
+                                            <constraint firstAttribute="width" constant="250" id="Rnw-FM-Lly"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="1Ng-QV-dY6" firstAttribute="top" secondItem="DSV-Sm-DOj" secondAttribute="top" constant="39" id="0KX-gz-kOv"/>
+                                    <constraint firstAttribute="centerX" secondItem="1Ng-QV-dY6" secondAttribute="centerX" id="K6w-0X-Z6l"/>
+                                    <constraint firstAttribute="centerX" secondItem="o3V-sV-fuC" secondAttribute="centerX" id="Rca-nG-o4g"/>
+                                    <constraint firstItem="Qw9-he-TRu" firstAttribute="top" secondItem="1Ng-QV-dY6" secondAttribute="bottom" constant="8" id="YMI-y4-9mJ"/>
+                                    <constraint firstAttribute="centerX" secondItem="1Ng-QV-dY6" secondAttribute="centerX" id="eWG-SU-tcD"/>
+                                    <constraint firstItem="o3V-sV-fuC" firstAttribute="top" secondItem="1Ng-QV-dY6" secondAttribute="bottom" constant="28" id="vyo-0n-byr"/>
+                                    <constraint firstAttribute="centerX" secondItem="Qw9-he-TRu" secondAttribute="centerX" id="zNx-SY-4Z8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DSV-Sm-DOj" firstAttribute="top" secondItem="hg1-4M-w4W" secondAttribute="bottom" priority="750" constant="60" id="LMW-dC-T3N"/>
+                            <constraint firstAttribute="centerY" secondItem="DSV-Sm-DOj" secondAttribute="centerY" constant="-30" id="MT0-Xv-nLH"/>
+                            <constraint firstItem="DSV-Sm-DOj" firstAttribute="trailing" secondItem="7Bg-gb-GMj" secondAttribute="trailingMargin" priority="750" id="eAe-Ji-1Fn"/>
+                            <constraint firstItem="5qp-AS-fOe" firstAttribute="top" secondItem="DSV-Sm-DOj" secondAttribute="bottom" constant="20" id="ho8-FW-Bf6"/>
+                            <constraint firstAttribute="centerX" secondItem="DSV-Sm-DOj" secondAttribute="centerX" id="m1Q-fi-iia"/>
+                            <constraint firstItem="DSV-Sm-DOj" firstAttribute="leading" secondItem="7Bg-gb-GMj" secondAttribute="leadingMargin" id="uXG-ZP-UIW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collegeImage" destination="1Ng-QV-dY6" id="6ug-yV-Td0"/>
+                        <outlet property="collegeName" destination="Qw9-he-TRu" id="e9u-9p-bq4"/>
+                        <outlet property="collegeYears" destination="o3V-sV-fuC" id="lHl-NF-cyq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7W-Xp-ZGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="-1832"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="hLg-qp-oVO">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="sdA-GR-ssO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mmj-QW-4Kn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="-1142"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="Cgs-zc-QqX">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" id="P3M-Vk-yCq" customClass="PageContentViewController" customModule="Prathmesh_Ranaut" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KFO-FU-eOS"/>
+                        <viewControllerLayoutGuide type="bottom" id="dFp-hh-0cU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Amh-co-ToW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCM-xW-4dX" customClass="PRProjectView" customModule="Prathmesh_Ranaut" customModuleProvider="target">
+                                <rect key="frame" x="16" y="80" width="568" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prathmesh_ranaut.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Gl3-xe-zT1">
+                                        <rect key="frame" x="234" y="30" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Ed7-OK-qwh"/>
+                                            <constraint firstAttribute="height" constant="100" id="JNR-HH-vtU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2010" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOV-CO-Me9">
+                                        <rect key="frame" x="234" y="161" width="100" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Dpb-gC-Yc5"/>
+                                            <constraint firstAttribute="height" constant="21" id="o0C-gW-tyR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVv-2m-yG9">
+                                        <rect key="frame" x="8" y="190" width="552" height="150"/>
+                                        <string key="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmT-Js-3b7">
+                                        <rect key="frame" x="209" y="138" width="150" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="5b7-RT-eZH"/>
+                                            <constraint firstAttribute="height" constant="21" id="DUP-Jy-4uB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="YOV-CO-Me9" firstAttribute="top" secondItem="SmT-Js-3b7" secondAttribute="bottom" constant="2" id="SW5-eA-s28"/>
+                                    <constraint firstAttribute="centerX" secondItem="YOV-CO-Me9" secondAttribute="centerX" id="U9F-AN-5kW"/>
+                                    <constraint firstAttribute="centerX" secondItem="Gl3-xe-zT1" secondAttribute="centerX" id="XGh-7f-2OA"/>
+                                    <constraint firstItem="SmT-Js-3b7" firstAttribute="top" secondItem="Gl3-xe-zT1" secondAttribute="bottom" constant="8" id="beE-WT-vbX"/>
+                                    <constraint firstAttribute="centerX" secondItem="SmT-Js-3b7" secondAttribute="centerX" id="kz9-f0-MfM"/>
+                                    <constraint firstItem="Gl3-xe-zT1" firstAttribute="top" secondItem="eCM-xW-4dX" secondAttribute="top" constant="30" id="lR6-Uw-NEw"/>
+                                    <constraint firstItem="CVv-2m-yG9" firstAttribute="top" secondItem="YOV-CO-Me9" secondAttribute="top" constant="29" id="whP-Fi-Gu9"/>
+                                    <constraint firstAttribute="centerX" secondItem="CVv-2m-yG9" secondAttribute="centerX" id="x6V-Cy-Q8k"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eCM-xW-4dX" firstAttribute="trailing" secondItem="Amh-co-ToW" secondAttribute="trailingMargin" priority="750" id="G8r-fa-kgR"/>
+                            <constraint firstAttribute="centerY" secondItem="eCM-xW-4dX" secondAttribute="centerY" constant="-30" id="XRi-ww-GlB"/>
+                            <constraint firstItem="dFp-hh-0cU" firstAttribute="top" secondItem="eCM-xW-4dX" secondAttribute="bottom" constant="20" id="Zqj-0u-vXJ"/>
+                            <constraint firstAttribute="centerX" secondItem="eCM-xW-4dX" secondAttribute="centerX" id="alX-H7-Mdn"/>
+                            <constraint firstItem="eCM-xW-4dX" firstAttribute="top" secondItem="KFO-FU-eOS" secondAttribute="bottom" priority="750" constant="60" id="c34-fe-a2C"/>
+                            <constraint firstItem="eCM-xW-4dX" firstAttribute="leading" secondItem="Amh-co-ToW" secondAttribute="leadingMargin" id="xdC-Ox-8dN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appDescription" destination="CVv-2m-yG9" id="8Hc-Wj-bwW"/>
+                        <outlet property="appIcon" destination="Gl3-xe-zT1" id="JpE-L2-djf"/>
+                        <outlet property="appName" destination="SmT-Js-3b7" id="5Wb-ii-2Zn"/>
+                        <outlet property="appYear" destination="YOV-CO-Me9" id="AOj-fb-nQS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NmR-aB-pJJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837" y="-467"/>
+        </scene>
+        <!--Projects-->
+        <scene sceneID="9yO-16-2V0">
+            <objects>
+                <viewController storyboardIdentifier="PRProjectsViewController" title="Projects" id="naF-hm-emM" customClass="PRProjectsViewController" customModule="Prathmesh_Ranaut" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zgq-0p-M4I"/>
+                        <viewControllerLayoutGuide type="bottom" id="4rH-kT-P7b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aAJ-LK-A24">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAw-jg-miH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1829" y="219"/>
+        </scene>
+        <!--Education-->
+        <scene sceneID="1vC-5k-hbE">
+            <objects>
+                <viewController storyboardIdentifier="PREducationViewController" title="Education" id="lqq-R8-Dr5" customClass="PREducationViewController" customModule="Prathmesh_Ranaut" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M2n-82-EuD"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZjZ-fK-UIx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o0B-gm-JnM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Kb-q8-dky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1829" y="1626"/>
+        </scene>
+        <!--Interests-->
+        <scene sceneID="2lY-JT-HCk">
+            <objects>
+                <viewController storyboardIdentifier="PRInterestsViewController" title="Interests" id="wMb-tn-5Mm" customClass="PRInterestsViewController" customModule="Prathmesh_Ranaut" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BSb-p9-R0E"/>
+                        <viewControllerLayoutGuide type="bottom" id="1GB-I8-iLf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="To8-3t-6th">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UEu-yk-2Za" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1829" y="942"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5cQ-1f-Vqb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Z9g-2W-qJb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c2O-Jp-jYU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="delegate" destination="ulB-d4-N3F" id="jou-VF-N9r"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="ROZ-Hi-UC0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Tp-Jw-ppt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="ulB-d4-N3F" customClass="NavigationControllerDelegate" customModule="Prathmesh_Ranaut" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="354"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="prathmesh_ranaut.jpg" width="717" height="717"/>
+        <image name="project_icon.png" width="395" height="289"/>
+    </resources>
 </document>
