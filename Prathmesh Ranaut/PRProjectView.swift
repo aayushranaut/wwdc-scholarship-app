@@ -27,9 +27,10 @@ import UIKit
         
         var effectView:UIVisualEffectView = UIVisualEffectView(effect: blur)
         
-        effectView.frame = CGRectMake(0, 0, self.bounds.width, height)
+        effectView.frame = CGRectMake(0, 0, self.bounds.width, self.bounds.height)
         
         self.insertSubview(effectView, atIndex:0)
+        
         self.layer.cornerRadius = 8.0
         self.clipsToBounds = true
     }

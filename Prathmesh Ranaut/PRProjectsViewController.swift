@@ -10,15 +10,24 @@ import UIKit
 
 class PRProjectsViewController: ViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
-    let appNames = ["iBounce", "Tiki Totems", "LiquidServe", "Hype Ninja", "Flying Ducks", "SEO Checkout"]
-    var appIcons = ["project_icon2.png","project3.png","project3.png","hypeninja.png", "flying_ducks.png", "seocheckout.png"]
-    var appYears = ["2011", "2012", "2012", "2013", "2014", "2015"]
+    let appNames = ["iBounce", "Tiki Totems", "LiquidServe", "Hype Ninja", "Flying Ducks", "SEO Checkout", "Spillit", "Skooter"]
+    var appIcons = ["project_icon2.png","project_8.png","project3.png","hypeninja.png", "flying_ducks.png", "seocheckout.png", "spillit.jpg", "project_7.png"]
+    var appYears = ["2011", "2012", "2012", "2013", "2014", "2014", "2014", "2015"]
     var appDescription = ["My first ever game which I built in 9th, so years after I started programming. It was built entirely in Objective-C using native technologies only. This was similar to the way Papi jump worked. Being a ball you had to dodge evil characters and move upwards infitely and gain as many points as possible.",
-                          "My second game",
-                          "Lorem ipsum text",
-                          "Lorem ipsum text",
-                          "Lorem ipsum text",
-                          "Lorem ipsum text"]
+        
+        "My second game, built using Cocos2D framework and Box2D physics engine. It used OpenFient for social gaming because GameCenter wasn't available at that time. The aim of the game was to make the tiki totem land on a particular block while removing all the superfluous block. ",
+        
+        "This was my first attempt of breaking into the web development arena. This project taught me how to manage servers. It exposed me to security issues on the web for the first time.",
+        
+        "Hype Ninja is a web app which allows the users to monitor keywords on popular social network as well as popular blogs on the internet. This automated system parsed feeds from Twitter, Facebook and blogs found on search engine and allowed the users to reply on items in the feed from within the Hype Ninja's admin panel using APIs. It enabled its users to do effective & targeted marketing.",
+        
+        "One of my weekends project, this game was my first encounter with SpriteKit, this is similar to the popular iOS game Flappy Bird. It utilized the UIDynamicAnimator APIs released with iOS 7 along with SpriteKit to build the entire game.",
+        
+        "SEO Checkout was a professional project. It is a web based affiliate management and sales portal built for a company. This project exposed me to complex algorithms and optimizations scenarios. The website has over 10 million hits since it's inception.",
+    
+        "Spillit.me is a social network popular in UK with over 700,000 users. I worked on modernizing the PHP backend. I also created an API which powered the Spillit iOS App.",
+        
+        "Skooter is a hyper-local bulletin board app which allows people to communicate anonymously. I built the android app due to larger market share of android in India. The response has been tremendous and the people are requesting for the iOS app. I am currently working on it and it should be released in the next few months."]
     var count = 0
     
     var pageViewController : UIPageViewController!
@@ -116,13 +125,12 @@ class PRProjectsViewController: ViewController, UIPageViewControllerDataSource, 
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
     }
-    override func viewDidLoad() {
+   
+   override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
-        
-        
+      
         reset()
     }
     
@@ -131,11 +139,11 @@ class PRProjectsViewController: ViewController, UIPageViewControllerDataSource, 
         
         UIGraphicsBeginImageContext(self.view.frame.size)
         
-        UIImage(named: "547561.png")!.drawInRect(self.view.bounds)
+        UIImage(named: "iphone-wallpapers-32.jpg")!.drawInRect(self.view.bounds)
         var image :UIImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
-        self.view.backgroundColor = UIColor(patternImage: image)
+        self.view.backgroundColor = UIColor(patternImage: image.applyLightEffect()!)
     }
 
     override func didReceiveMemoryWarning() {

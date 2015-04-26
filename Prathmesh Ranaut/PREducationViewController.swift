@@ -88,11 +88,50 @@ class PREducationViewController: ViewController, UIPageViewControllerDataSource,
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
     }
+    
+    @IBOutlet weak var im1: UIImageView!
+    @IBOutlet weak var im2: UIImageView!
+    @IBOutlet weak var im3: UIImageView!
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        reset()
+        //reset()
+        label1.text = years[0]
+        label2.text = years[1]
+        label3.text = years[2]
+        
+        UIView.animateWithDuration(1, animations: {
+            self.im1.alpha = 1.0
+            self.im2.alpha = 1.0
+            self.im3.alpha = 1.0
+        })
+        
+        UIView.animateWithDuration(2.0, animations: {
+            var transalation = CGAffineTransformMakeTranslation(0, -60)
+            self.im1.transform = transalation
+//            self.im2.transform = transalation
+//            self.im3.transform = transalation
+            self.label1.transform = transalation
+//            self.label2.transform = transalation
+//            self.label3.transform = transalation
+        })
+        
+        UIView.animateWithDuration(3.0, animations: {
+            var transalation = CGAffineTransformMakeTranslation(0, -60)
+            self.im2.transform = transalation
+            self.label2.transform = transalation
+        })
+        
+        UIView.animateWithDuration(4.0, animations: {
+            var transalation = CGAffineTransformMakeTranslation(0, -60)
+            self.im3.transform = transalation
+            self.label3.transform = transalation
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -104,11 +143,11 @@ class PREducationViewController: ViewController, UIPageViewControllerDataSource,
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         
         UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "pwc-building.jpg")!.drawInRect(self.view.bounds)
+        UIImage(named: "education-back.jpg")!.drawInRect(self.view.bounds)
         var image :UIImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
-        self.view.backgroundColor = UIColor(patternImage: image)
+        self.view.backgroundColor = UIColor(patternImage: image.applyBlurWithRadius(10, tintColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0.1), saturationDeltaFactor: 0.6, maskImage: nil)!)
     }
 
     /*

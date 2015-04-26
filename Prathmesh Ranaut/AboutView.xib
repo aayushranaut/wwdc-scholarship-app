@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AboutView" customModule="Prathmesh_Ranaut" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prathmesh_ranaut.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="P3O-y2-zSm">
+                    <rect key="frame" x="25" y="30" width="550" height="175"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="175" id="i1G-En-nm7"/>
+                    </constraints>
+                </imageView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="R76-ax-DDK">
+                    <rect key="frame" x="280" y="553" width="39" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="hSR-y7-mpC"/>
+                    </constraints>
+                    <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                        <rect key="frame" x="181" y="571" width="39" height="37"/>
+                    </variation>
+                </pageControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7Y-Pg-K8g">
+                    <rect key="frame" x="25" y="250" width="550" height="292"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBm-SV-KvH">
+                    <rect key="frame" x="25" y="215" width="550" height="26"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="y7Y-Pg-K8g" secondAttribute="trailing" constant="25" id="0Wq-yX-ohl"/>
+                <constraint firstItem="y7Y-Pg-K8g" firstAttribute="top" secondItem="aBm-SV-KvH" secondAttribute="bottom" constant="10" id="322-KZ-nyl"/>
+                <constraint firstItem="aBm-SV-KvH" firstAttribute="top" secondItem="P3O-y2-zSm" secondAttribute="bottom" constant="8" id="5f9-4s-ob3"/>
+                <constraint firstAttribute="bottom" secondItem="R76-ax-DDK" secondAttribute="bottom" constant="10" id="6U6-Gu-id6"/>
+                <constraint firstItem="aBm-SV-KvH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="ACh-wr-E5x"/>
+                <constraint firstAttribute="centerX" secondItem="y7Y-Pg-K8g" secondAttribute="centerX" id="DpY-xa-lwJ"/>
+                <constraint firstItem="y7Y-Pg-K8g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="EJz-Yy-xL8"/>
+                <constraint firstAttribute="trailing" secondItem="aBm-SV-KvH" secondAttribute="trailing" constant="25" id="HqO-lR-8UJ"/>
+                <constraint firstAttribute="centerX" secondItem="P3O-y2-zSm" secondAttribute="centerX" id="J57-M8-vR7"/>
+                <constraint firstItem="y7Y-Pg-K8g" firstAttribute="top" secondItem="aBm-SV-KvH" secondAttribute="bottom" constant="8" symbolic="YES" id="JKo-8R-bB7"/>
+                <constraint firstItem="R76-ax-DDK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y7Y-Pg-K8g" secondAttribute="bottom" priority="750" constant="10" id="Mux-Ts-Dl8"/>
+                <constraint firstItem="P3O-y2-zSm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="Uoz-wR-fUx"/>
+                <constraint firstAttribute="centerX" secondItem="R76-ax-DDK" secondAttribute="centerX" id="W9g-08-j68"/>
+                <constraint firstItem="y7Y-Pg-K8g" firstAttribute="top" secondItem="P3O-y2-zSm" secondAttribute="bottom" constant="8" id="aPR-hY-M7a"/>
+                <constraint firstItem="P3O-y2-zSm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="iyh-3j-CxH"/>
+                <constraint firstAttribute="trailing" secondItem="P3O-y2-zSm" secondAttribute="trailing" constant="25" id="ncJ-fk-cO8"/>
+                <constraint firstAttribute="centerX" secondItem="aBm-SV-KvH" secondAttribute="centerX" id="tX7-oh-l0A"/>
+                <constraint firstItem="aBm-SV-KvH" firstAttribute="top" secondItem="P3O-y2-zSm" secondAttribute="bottom" constant="10" id="uk1-yj-zsi"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="5f9-4s-ob3"/>
+                    <exclude reference="JKo-8R-bB7"/>
+                    <exclude reference="aPR-hY-M7a"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="P3O-y2-zSm" id="Yo3-Pb-PbS"/>
+                <outlet property="pageControl" destination="R76-ax-DDK" id="kI3-5I-uxI"/>
+                <outlet property="summary" destination="y7Y-Pg-K8g" id="Ixa-Y9-Sf4"/>
+                <outlet property="title" destination="aBm-SV-KvH" id="X5e-Su-N4B"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="prathmesh_ranaut.jpg" width="717" height="717"/>
+    </resources>
+</document>

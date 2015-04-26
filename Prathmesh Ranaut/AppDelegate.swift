@@ -39,6 +39,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+//        
+//        var fileManager: NSFileManager = NSFileManager.defaultManager()
+//        var docsDir: String?
+//        var dataFile: String?
+//        var firstOpening: Int?
+//
+//        let dirPaths = NSSearchPathForDirectoriesInDomains(
+//            .DocumentDirectory, .UserDomainMask, true)
+//        
+//        docsDir = dirPaths[0] as? String
+//        dataFile = docsDir?.stringByAppendingPathComponent("loading_video.txt")
+//        
+//        let databuffer = NSString(string: "0").dataUsingEncoding(NSUTF8StringEncoding)
+//        fileManager.createFileAtPath(dataFile!, contents: databuffer, attributes: nil)
     }
 
 
